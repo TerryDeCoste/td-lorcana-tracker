@@ -1,0 +1,115 @@
+.heading {
+  font-size: 1.5rem;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.continueButton {
+  height: 15rem;
+  width: 15rem;
+  border: 1px solid black;
+  border-radius: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 0.75rem;
+}
+
+.centerBox {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.playerButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.winnerText {
+  font-size: 5rem;
+  width: 40rem;
+  text-align: center;
+}
+
+.startNewGameButton {
+  height: 5rem;
+  width: 15rem;
+  border: 1px solid black;
+  border-radius: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 0.75rem;
+}
+
+.passTheTurn {
+  height: 10rem;
+  width: 17rem;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.passTheTurn > div {
+  font-size: 1.6rem;
+  margin: 0.75rem;
+}
+
+.playerArea {
+  height: 19rem;
+  width: 20rem;
+  margin: -3.75rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.playerName {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.playerLoreArea {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.playerLoreArea > div {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+}
+
+.playerLoreCounter {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diceBox {
+  height: 7rem;
+  width: 7rem;
+  font-size: 2rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
