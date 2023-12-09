@@ -1,115 +1,427 @@
 .heading {
+
   font-size: 1.5rem;
+
+  width: 3rem;
+
+  transform-origin: top left;
+
+  transform: rotate(-90deg) translate(-100%, 0%);
+
+  text-wrap: nowrap;
+
 }
+
+ 
 
 .content {
+
   flex-grow: 1;
+
   display: flex;
+
+  flex-direction: column;
+
   align-items: center;
-  justify-content: center;
+
+  justify-content: space-between;
+
   color: black;
+
+  height: 100vh;
+
 }
+
+ 
 
 .continueButton {
+
   height: 15rem;
+
   width: 15rem;
+
   border: 1px solid black;
+
   border-radius: 1.5rem;
-  background-color: rgba(255, 255, 255, 0.5);
+
+  background-color: rgba(255,255,255,0.5);
+
   cursor: pointer;
+
   font-size: 1.5rem;
+
   margin: 0.75rem;
+
 }
+
+ 
 
 .centerBox {
+
   display: flex;
+
   flex-flow: column;
+
   align-items: center;
+
+  justify-content: center;
+
+  height: 100%;
+
+  width: 100%;
+
 }
 
-.playerButtonContainer {
-  display: flex;
-  justify-content: center;
-}
+ 
 
 .winnerText {
+
   font-size: 5rem;
-  width: 40rem;
+
   text-align: center;
+
 }
+
+ 
 
 .startNewGameButton {
+
   height: 5rem;
+
   width: 15rem;
+
   border: 1px solid black;
+
   border-radius: 1.5rem;
-  background-color: rgba(255, 255, 255, 0.5);
+
+  background-color: rgba(255,255,255,0.5);
+
   cursor: pointer;
+
   font-size: 1.5rem;
+
   margin: 0.75rem;
+
 }
+
+ 
 
 .passTheTurn {
-  height: 10rem;
-  width: 17rem;
+
+  width: 100%;
+
   border: 1px solid #333;
-  border-radius: 1rem;
+
+  border-radius: 0.5rem;
+
   cursor: pointer;
+
 }
 
-.passTheTurn > div {
+ 
+
+.passTheTurn>div {
+
   font-size: 1.6rem;
+
   margin: 0.75rem;
+
 }
+
+ 
 
 .playerArea {
-  height: 19rem;
-  width: 20rem;
-  margin: -3.75rem;
+
+  height: 100%;
+
+  width: 100%;
+
+  position: relative;
+
   display: flex;
-  flex-flow: column;
+
   align-items: center;
+
+  justify-content: center;
+
 }
+
+ 
 
 .playerName {
+
+  position: absolute;
+
+  top: 0;
+
   font-size: 2rem;
+
   margin-top: 1rem;
+
 }
+
+ 
+
+.winCountArea {
+
+  position: absolute;
+
+  display: flex;
+
+  width: 100%;
+
+  align-items: center;
+
+  justify-content: center;
+
+  bottom: 0.5rem;
+
+  font-size: 1.5rem;
+
+}
+
+ 
 
 .playerLoreArea {
+
   position: absolute;
+
   display: flex;
+
   justify-content: space-between;
+
   width: 100%;
+
   height: 100%;
+
 }
-.playerLoreArea > div {
+
+.playerLoreArea>div {
+
   flex-basis: 50%;
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
   font-size: 5rem;
+
 }
+
+ 
 
 .playerLoreCounter {
+
   position: absolute;
+
   height: 100%;
+
   width: 100%;
+
   font-size: 5rem;
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
 }
 
-.diceBox {
-  height: 7rem;
-  width: 7rem;
-  font-size: 2rem;
-  border: 1px solid black;
-  border-radius: 1rem;
-  padding: 2rem;
-  margin: 0.75rem;
+ 
+
+.setupRow {
+
   display: flex;
+
+  flex-direction: column;
+
   align-items: center;
+
+  justify-content: space-between;
+
+}
+
+ 
+
+.setupRowArea {
+
+  display: flex;
+
+  flex-flow: column;
+
+  align-items: center;
+
   justify-content: center;
+
+}
+
+ 
+
+.setupTitle {
+
+  font-size: 1rem;
+
+}
+
+ 
+
+.setupButtons {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+}
+
+ 
+
+.setupButtons > button {
+
+  font-size: 1rem;
+
+  border: 1px solid black;
+
+  border-radius: 0.5rem;
+
+  padding: 1rem;
+
+  margin: 0.25rem;
+
+}
+
+ 
+
+.setupButtonActive {
+
+  transform: scale(1.1);
+
+  background-color: rgba(83, 83, 83, 0.5);
+
+  color: white;
+
+}
+
+ 
+
+.playLayout {
+
+  position: absolute;
+
+  display: flex;
+
+  flex-flow: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 0.5rem;
+
+  height: 100vh;
+
+  width: calc(100vw - 3rem);
+
+}
+
+ 
+
+.playCenterRow {
+
+  padding: 1rem;
+
+  border: 1px solid black;
+
+  border-radius: 0.5rem;
+
+  width: 100%;
+
+  margin: 0.5rem;
+
+  text-align: center;
+
+}
+
+.playCenterRow > div:first-child {
+
+  font-size: 1.3rem;
+
+}
+
+ 
+
+.playPlayerRow {
+
+  flex-basis: 40%;
+
+  display: flex;
+
+  flex-flow: column;
+
+  width: 100%;
+
+}
+
+ 
+
+.playPlayerRowSplit {
+
+  flex-basis: 40%;
+
+  display: flex;
+
+  width: 100%;
+
+}
+
+ 
+
+.playerButton {
+
+  width: 100%;
+
+  height: 100%;
+
+  flex-grow: 1;
+
+}
+
+ 
+
+.creditSection {
+
+  flex-basis: 20%;
+
+  margin: 1rem;
+
+  width: 80%;
+
+}
+
+ 
+
+.creditSection > p {
+
+  font-size: 1.1rem;
+
+  padding: 0.5rem 0;
+
+}
+
+ 
+
+.introductionRow{
+
+  text-align: center;
+
+  flex-basis: 20%;
+
+  margin: 2rem 0;
+
+  font-size: 2rem;
+
 }
