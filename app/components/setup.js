@@ -144,17 +144,8 @@ const Setup = ({
 
           <p>
 
-            You can learn more about the TCG at the official Ravensberger Site
+            You can learn more about the TCG at the official Ravensberger Site <a href="https://www.disneylorcana.com/">here.</a>
 
-            here.
-
-          </p>
-
-          <p>
-            You can learn more about Terry, the creator of this site at{" "}
-            <a href="https://terrydecoste-personalprofile.netlify.app/">
-              his profile page here.
-            </a>
           </p>
         </div>
       </div>
